@@ -1,16 +1,11 @@
-name: Gatekeeper Protocol
+name: Gatekeeper
 on:
   push:
-    branches: [ "main" ]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
-  validate-integrity:
+  check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-      - name: Quality Check Injection
-        run: echo "Executing Error 10/97 Bypass"
-      - name: Anti-Interference Scan
-        run: echo "Status: No-Gratis Policy Active"
+      - run: echo "Sistema Pronto"
