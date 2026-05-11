@@ -1,0 +1,12 @@
+{
+  "kernel_node": "OMEGA-240",
+  "security_status": "HIGH_PRIORITY",
+  "protocols": {
+    "filter": "APEX_ACTIVE",
+    "comm_mode": "ZERO_VERBOSITY",
+    "error_handling": "10/97_STRICT",
+    "interference_shield": "ENABLED"
+  },
+  "authorization": "ARCHITECT_ONLY",
+  "resource_policy": "NO_GRATIS_ENFORCED"
+}
