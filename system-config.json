@@ -1,8 +1,17 @@
 {
-  "system_status": "active",
-  "protocol_version": "24.0_APEX",
-  "security_layer": "host-level",
-  "access_control": "strict",
-  "rate_limiting": true,
-  "zero_verbosity_policy": "enabled"
+  "kernel": "OMEGA-240",
+  "version": "24.0_EXTERNAL_APEX",
+  "proxy_config": {
+    "mode": "MIMETIC",
+    "rate_limit": {
+      "requests_per_window": 100,
+      "window_ms": 900000,
+      "burst_mode": false
+    },
+    "headers": {
+      "bypass": "SILENT",
+      "filter": "ANTI-INTERFERENCE"
+    }
+  },
+  "status": "SEALED"
 }
