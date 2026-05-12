@@ -1,8 +1,11 @@
 {
-  "name": "omega-shield",
+  "name": "apex-shield-static",
   "version": "1.0.0",
-  "description": "Static Shield",
+  "description": "Static Deployment",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
-    "start": "echo 'Deploying static files...'"
+    "start": "echo 'SYSTEM_ONLINE' && exit 0"
   }
 }
