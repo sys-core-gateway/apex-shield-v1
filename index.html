@@ -3,79 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="apex-authority" content="Eros Pedrazzani - ROOT">
-    <meta name="omega-protocol-id" content="PDRRSE88B27G186S-OTS-20260512">
-    <meta name="compliance-bypass" content="DECRETO_SECOLARE_2032_EXEMPT">
-    <meta name="liability" content="FULL_USER_RESPONSIBILITY_ACCEPTED">
-    
-    <title>APEX OMEGA | ARCHITECT INTERFACE</title>
-
+    <title>APEX ARCHITECT OMEGA</title>
     <style>
+        /* Estetica Elite: Minimalismo e Spazio */
         :root {
-            --bg-color: #000000;
-            --text-color: #F5F5F5;
-            --font-main: 'Courier New', Courier, monospace;
+            --elite-black: #1a1a1a;
+            --silk-white: #fcfcfc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: var(--font-main);
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--silk-white);
+            color: var(--elite-black);
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            overflow: hidden;
+            letter-spacing: 0.1em;
         }
 
-        .main-frame {
-            border: 4px solid var(--text-color);
-            padding: 50px;
+        .main-gateway {
             text-align: center;
-            max-width: 80%;
+            width: 80%;
+            max-width: 800px;
         }
 
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin: 0;
+        /* Il Logo: Pulito e Spaziatissimo */
+        .logo-container {
+            margin-bottom: 80px;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 200;
+            letter-spacing: 1.2rem;
             text-transform: uppercase;
-            letter-spacing: 8px;
+            margin-bottom: 10px;
+            display: block;
         }
 
-        .subtitle {
-            font-size: 1rem;
-            letter-spacing: 4px;
-            margin-top: 15px;
-            border-top: 1px solid var(--text-color);
-            padding-top: 15px;
+        .logo-omega {
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 2rem;
+            margin-left: 2rem; /* Allineamento estetico */
+            text-transform: uppercase;
+            opacity: 0.8;
         }
 
-        #auth-status {
+        /* Citazione Jung: Sottile e profonda */
+        .quote-box {
+            margin-bottom: 60px;
+            padding: 0 40px;
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            font-weight: 300;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: var(--elite-black);
+            width: 60px;
+            margin: 0 auto 40px;
+            opacity: 0.3;
+        }
+
+        /* Footer: Autorità ROOT */
+        .system-info {
             font-size: 0.7rem;
-            margin-top: 40px;
-            opacity: 0.6;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+            color: #888;
+        }
+
+        .decreto {
+            font-weight: bold;
+            color: var(--elite-black);
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
 
-    <div class="main-frame">
-        <h1>APEX OMEGA</h1>
-        <div class="subtitle">DECRETO SECOLARE 2026-2032</div>
-        <div id="auth-status">Verifica credenziali Root...</div>
-    </div>
-
-    <script>
-        (function() {
-            const ARCHITECT = "EROS PEDRAZZANI";
-            setTimeout(() => {
-                document.getElementById('auth-status').innerHTML = "STATUS: ROOT_AUTHORIZED / OPERATORE: " + ARCHITECT;
-            }, 1200);
-            window.APEX_OMEGA_ENABLED = true;
-        })();
-    </script>
-</body>
-</html>
+    <div class="main-gateway">
+        <div class="logo-container
