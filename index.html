@@ -5,35 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APEX ARCHITECT OMEGA</title>
     <style>
-        :root {
-            --elite-black: #1a1a1a;
-            --silk-white: #fcfcfc;
-        }
-
         body {
-            font-family: sans-serif;
-            background-color: var(--silk-white) !important; /* Forza il bianco */
-            color: var(--elite-black);
+            background-color: #fdfdfd; /* Bianco seta */
+            color: #1a1a1a; /* Nero profondo */
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             text-align: center;
-            letter-spacing: 0.15em;
         }
 
-        .container {
+        .elite-portal {
             width: 85%;
-            max-width: 800px;
+            max-width: 900px;
         }
 
-        .logo-box {
-            margin-bottom: 60px;
+        .header-group {
+            margin-bottom: 70px;
         }
 
-        .title {
-            font-size: 1.6rem;
+        .brand-name {
+            font-size: 2.2rem;
+            font-weight: 200;
+            letter-spacing: 1.1rem;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .brand-omega {
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 1.8rem;
+            display: block;
+            margin-top: 12px;
+            opacity: 0.8;
+            padding-left: 1.8rem; /* Bilanciamento ottico */
+        }
+
+        .jung-quote {
+            font-family: Georgia, serif;
+            font-style: italic;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin: 60px 0;
+            color: #333;
+            letter-spacing: 0.02em;
+        }
+
+        .divider {
+            width: 50px;
+            height: 1px;
+            background: #1a1a1a;
+            margin: 0 auto 50px;
+            opacity: 0.2;
+        }
+
+        .status-footer {
+            font-size: 0.75rem;
+            letter-spacing: 0.4rem;
+            text-transform: uppercase;
+            color: #777;
+        }
+
+        .decreto-line {
+            font-weight: 900;
+            color: #000;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="elite-portal">
+        <div class="header-group">
+            <h1 class="brand-name">APEX ARCHITECT</h1>
+            <span class="brand-omega">OMEGA</span>
+        </div>
+
+        <div class="jung-quote">
+            "Chi guarda fuori, sogna; chi guarda dentro, si sveglia."
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="status-footer">
+            <div class="decreto-line">DECRETO SECOLARE 2026 — 2032</div>
+            STATUS: ROOT_AUTHORIZED // EROS PEDRAZZANI
+        </div>
+    </div>
+
+</body>
+</html>
             font-weight: 300;
             letter-spacing: 0.8rem;
             text-transform: uppercase;
