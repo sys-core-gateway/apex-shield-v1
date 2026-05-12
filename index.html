@@ -2,25 +2,31 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>APEX OMEGA GATEWAY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX OMEGA - PERMANENT CONTROL</title>
     <style>
-        body { background:#000; color:#0f0; font-family:monospace; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; margin:0; text-transform:uppercase; }
-        .box { border:2px solid #0f0; padding:40px; text-align:center; box-shadow:0 0 20px #0f0; }
-        .status { color:#fff; margin-bottom:20px; border-bottom:1px solid #0f0; padding-bottom:10px; font-size:0.9em; }
-        .btn { background:#0f0; color:#000; padding:15px 30px; text-decoration:none; font-weight:bold; display:inline-block; margin:10px; width:280px; }
-        .btn-v { background:#fff; color:#000; }
+        body { background:#000; color:#0f0; font-family:monospace; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; margin:0; }
+        .box { border:3px solid #0f0; padding:40px; text-align:center; box-shadow:0 0 30px #0f0; background: rgba(0,20,0,0.2); max-width: 90%; }
+        h1 { font-size: 2em; letter-spacing: 2px; margin-bottom: 10px; }
+        .status { border-top: 1px solid #0f0; border-bottom: 1px solid #0f0; padding: 10px 0; margin: 20px 0; font-size: 1.1em; line-height: 1.5; }
+        .access { color: #0f0; font-weight: bold; margin-bottom: 30px; letter-spacing: 1px; }
+        .btn { background:#0f0; color:#000; padding:18px; text-decoration:none; font-weight:bold; display:block; margin:15px auto; width:280px; text-transform:uppercase; font-size: 1.1em; }
+        .btn-white { background:#fff; color:#000; }
+        .btn:hover { opacity: 0.8; transform: scale(1.02); }
     </style>
 </head>
 <body>
     <div class="box">
-        <h1>SYS-CORE-GATEWAY</h1>
+        <h1>SISTEMA APEX OMEGA</h1>
         <div class="status">
-            VERSION: 24.0_EXTERNAL_APEX<br>
-            STATUS: ACTIVE / PUBLIC SHIELD
+            [ROOT CONTROL ACTIVE]<br>
+            [DECRETO SECOLARE 2026]
         </div>
-        <a href="kernel.pdf" class="btn">ACCEDI KERNEL BRAND</a><br>
-        <a href="decreto.pdf" class="btn btn-v">ACCEDI DECRETO SECOLARE</a>
-        <p style="font-size:0.7em; margin-top:20px;">LOGIC: FILTER & EXECUTE</p>
+        <div class="access">ACCESSO RISERVATO ARCHITETTO EROS</div>
+        
+        <a href="kernel.pdf" class="btn">ESEGUI KERNEL.PDF</a>
+        
+        <a href="decreto.pdf" class="btn btn-white">ESEGUI DECRETO SECOLARE</a>
     </div>
 </body>
 </html>
