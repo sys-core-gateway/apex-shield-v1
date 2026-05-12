@@ -1,89 +1,108 @@
 <!DOCTYPE html>
-<html style="background-color: #f2f2f0 !important;">
+<html style="background-color: #f2f2f0 !important; color: #1a1a1a !important;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APEX ARCHITECT OMEGA</title>
     <style>
-        /* FORZATURA TOTALE DEI COLORI */
+        /* RESET AGGRESSIVO */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+            background-color: transparent !important; 
+        }
+
+        /* FIX KERNEL COLORI */
         html, body {
             background-color: #f2f2f0 !important; /* BIANCO SETA */
             color: #1a1a1a !important;            /* NERO TITANIO */
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            width: 100vw;
+            height: 100%;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            -webkit-font-smoothing: antialiased;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            -webkit-text-size-adjust: 100%;
         }
 
-        .omega-box {
+        .gateway-shield {
+            text-align: center;
             width: 90%;
             max-width: 800px;
+            /* Forza il colore su tutto il blocco */
+            color: #1a1a1a !important;
         }
 
-        /* SIMBOLO OMEGA SOPRA */
+        /* SIMBOLO Ω SOPRA */
         .symbol-top {
-            font-size: 5rem;
+            font-size: 5.5rem;
             line-height: 1;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-weight: 100;
-            color: #1a1a1a !important;
         }
 
-        .apex-title {
-            font-family: 'Helvetica', Arial, sans-serif;
-            font-size: 1.5rem;
+        .brand-sub {
+            font-size: 1.4rem;
             font-weight: 200;
-            letter-spacing: 0.8rem;
+            letter-spacing: 0.9rem;
             text-transform: uppercase;
-            color: #1a1a1a !important;
-            margin: 0;
+            margin-bottom: 10px;
         }
 
-        /* OMEGA GRASSETTO PIENO E ARROTONDATO */
-        .omega-brand {
-            font-family: 'Arial Black', 'Arial Bold', sans-serif;
+        /* OMEGA GRASSETTO PIENO ARROTONDATO */
+        .brand-main-omega {
+            font-family: 'Arial Black', Gadget, sans-serif;
             font-size: 4.5rem;
             font-weight: 900;
             letter-spacing: 0.3rem;
             text-transform: uppercase;
-            color: #1a1a1a !important;
-            margin-bottom: 40px;
             display: block;
+            margin-bottom: 40px;
         }
 
-        .jung-quote {
+        .statement {
             font-family: 'Georgia', serif;
             font-style: italic;
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             line-height: 1.8;
-            color: #222 !important;
-            border-top: 1px solid rgba(0,0,0,0.1);
-            border-bottom: 1px solid rgba(0,0,0,0.1);
             padding: 30px 0;
             margin: 40px 0;
+            border-top: 1px solid rgba(0,0,0,0.15);
+            border-bottom: 1px solid rgba(0,0,0,0.15);
         }
 
-        .footer-elite {
-            font-size: 0.7rem;
-            letter-spacing: 0.3rem;
+        .footer-auth {
+            font-size: 0.75rem;
+            letter-spacing: 0.4rem;
             text-transform: uppercase;
-            color: #555 !important;
+            opacity: 0.7;
         }
 
-        .bold-footer {
+        .bold-id {
             font-weight: 900;
-            color: #000 !important;
+            display: block;
+            margin-bottom: 15px;
         }
     </style>
 </head>
-<body style="background-color: #f2f2f0 !important;">
+<body>
 
-    <div class="omega-box">
+    <div class="gateway-shield">
         <div class="symbol-top">Ω</div>
         
-        <h
+        <div class="brand-sub">APEX ARCHITECT</div>
+        <div class="brand-main-omega">OMEGA</div>
+
+        <div class="statement">
+            "Chi guarda fuori, sogna; chi guarda dentro, si sveglia."
+        </div>
+
+        <div class="footer-auth">
+            <span class="bold-id">DECRETO SECOLARE 2026 — 2032</span>
+            STATUS: ROOT_AUTHORIZED // OPERATORE: EROS PEDRAZZANI
+        </div>
+    </div>
+
+</body>
+</html>
