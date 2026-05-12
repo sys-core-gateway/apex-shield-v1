@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APEX OMEGA - PERMANENT CONTROL</title>
+    <title>SISTEMA APEX OMEGA - SECURE</title>
     <style>
-        body { background:#000; color:#0f0; font-family:monospace; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; margin:0; }
-        .box { border:3px solid #0f0; padding:40px; text-align:center; box-shadow:0 0 30px #0f0; background: rgba(0,20,0,0.2); max-width: 90%; }
-        h1 { font-size: 2em; letter-spacing: 2px; margin-bottom: 10px; }
-        .status { border-top: 1px solid #0f0; border-bottom: 1px solid #0f0; padding: 10px 0; margin: 20px 0; font-size: 1.1em; line-height: 1.5; }
-        .access { color: #0f0; font-weight: bold; margin-bottom: 30px; letter-spacing: 1px; }
-        .btn { background:#0f0; color:#000; padding:18px; text-decoration:none; font-weight:bold; display:block; margin:15px auto; width:280px; text-transform:uppercase; font-size: 1.1em; }
-        .btn-white { background:#fff; color:#000; }
-        .btn:hover { opacity: 0.8; transform: scale(1.02); }
+        /* Mantengo lo stile dello Screenshot_20260513_003838_Chrome.jpg */
+        body { background-color: black; color: #00FF00; font-family: 'Courier New', monospace; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; text-align: center; }
+        .status { border: 1px solid #00FF00; padding: 10px; margin: 20px; }
+        button { display: block; width: 300px; padding: 15px; margin: 15px; cursor: pointer; font-weight: bold; }
+        .btn-green { background-color: #00FF00; color: black; }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>SISTEMA APEX OMEGA</h1>
-        <div class="status">
-            [ROOT CONTROL ACTIVE]<br>
-            [DECRETO SECOLARE 2026]
-        </div>
-        <div class="access">ACCESSO RISERVATO ARCHITETTO EROS</div>
-        
-        <a href="kernel.pdf" class="btn">ESEGUI KERNEL.PDF</a>
-        
-        <a href="decreto.pdf" class="btn btn-white">ESEGUI DECRETO SECOLARE</a>
-    </div>
+    <h1>SISTEMA APEX OMEGA</h1>
+    <div class="status">[PROTEZIONE LIVELLO 5 ATTIVA]</div>
+
+    <button class="btn-green" onclick="richiediFile('kernel.pdf')">ESEGUI KERNEL.PDF</button>
+    <button class="btn-green" onclick="richiediFile('decreto.pdf')">ESEGUI DECRETO SECOLARE</button>
+
+    <script>
+        async function richiediFile(nomeFile) {
+            const pass = prompt("Inserire Codice Architetto:");
+            
+            const response = await fetch('/verify-access', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ password: pass, fileName: nomeFile })
+            });
+
+            if (response.ok) {
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                window.open(url); // Apre il PDF solo se il server ha dato l'OK
+            } else {
+                alert("ACCESSO NEGATO. Violazione rilevata.");
+            }
+        }
+    </script>
 </body>
 </html>
