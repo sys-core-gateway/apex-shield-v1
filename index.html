@@ -5,91 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APEX ARCHITECT OMEGA</title>
     <style>
-        /* RESET E SFONDO BIANCO ELITE */
+        /* COLORI ESTRATTI DALLA TUA IMMAGINE 4067.png */
+        :root {
+            --bg-seta: #f4f4f2;      /* Il bianco materico dello sfondo */
+            --titanio-deep: #121212;  /* Nero assoluto per il grassetto */
+            --grigio-metallo: #444444; /* Per i dettagli tecnici */
+        }
+
         body {
-            background-color: #ffffff !important;
-            color: #000000 !important;
-            font-family: 'Helvetica', Arial, sans-serif;
+            background-color: var(--bg-seta) !important;
+            color: var(--titanio-deep) !important;
+            font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             text-align: center;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.05em;
         }
 
-        .container {
-            width: 90%;
-            max-width: 800px;
+        .elite-container {
+            width: 85%;
+            max-width: 850px;
         }
 
-        /* IL SIMBOLO OMEGA DALLA TASTIERA */
-        .symbol {
-            font-size: 5rem;
-            font-weight: 100;
-            margin-bottom: 20px;
-            display: block;
+        /* SCRITTA OMEGA IN GRASSETTO (NIENTE SIMBOLI EGIZI) */
+        .brand-logo {
+            margin-bottom: 50px;
         }
 
-        .brand-title {
-            font-size: 1.8rem;
-            font-weight: 200;
+        .main-title {
+            font-size: 2.2rem;
+            font-weight: 200; /* Sottile sopra */
             letter-spacing: 1rem;
             text-transform: uppercase;
-            margin-bottom: 5px;
-        }
-
-        .brand-sub {
-            font-size: 1rem;
-            font-weight: 700;
-            letter-spacing: 1.5rem;
-            margin-bottom: 50px;
+            margin: 0;
             display: block;
         }
 
-        .quote {
-            font-size: 1.2rem;
-            font-style: italic;
-            line-height: 1.6;
-            margin-bottom: 60px;
-            color: #333;
-        }
-
-        .line {
-            width: 60px;
-            height: 1px;
-            background: #000;
-            margin: 0 auto 40px;
-        }
-
-        .footer {
-            font-size: 0.7rem;
-            letter-spacing: 0.3rem;
+        .bold-omega {
+            font-size: 3.5rem;
+            font-weight: 900; /* GRASSETTO MASSICCIO */
+            letter-spacing: 1.5rem;
             text-transform: uppercase;
-            color: #666;
+            display: block;
+            margin-top: 10px;
+            padding-left: 1.5rem; /* Bilanciamento per la spaziatura */
         }
 
-        .bold { font-weight: bold; color: #000; }
+        .jung-quote {
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: #222;
+            margin: 50px 0;
+            padding: 30px 0;
+            border-top: 1px solid rgba(0,0,0,0.08);
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+
+        .technical-info {
+            font-size: 0.75rem;
+            letter-spacing: 0.4rem;
+            text-transform: uppercase;
+            color: var(--grigio-metallo);
+        }
+
+        .status-line {
+            font-weight: 900;
+            color: var(--titanio-deep);
+            margin-bottom: 12px;
+            display: block;
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="symbol">Ω</div>
+    <div class="elite-container">
+        <div class="brand-logo">
+            <span class="main-title">APEX ARCHITECT</span>
+            <span class="bold-omega">OMEGA</span>
+        </div>
 
-        <div class="brand-title">APEX ARCHITECT</div>
-        <div class="brand-sub">OMEGA</div>
-
-        <div class="quote">
+        <div class="jung-quote">
             "Chi guarda fuori, sogna; chi guarda dentro, si sveglia."
         </div>
 
-        <div class="line"></div>
-
-        <div class="footer">
-            <div class="bold">DECRETO SECOLARE 2026 — 2032</div>
-            STATUS: ROOT_AUTHORIZED // EROS PEDRAZZANI
+        <div class="technical-info">
+            <span class="status-line">DECRETO SECOLARE 2026 — 2032</span>
+            STATUS: ROOT_AUTHORIZED // OPERATORE: EROS PEDRAZZANI // MIMETIC SHIELD ACTIVE
         </div>
     </div>
 
