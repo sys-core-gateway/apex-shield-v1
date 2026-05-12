@@ -1,0 +1,1 @@
+const buffer = (data) => data.filter(Boolean);
