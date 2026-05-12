@@ -1,12 +1,8 @@
 {
-  "name": "apex-shield-v1",
+  "name": "omega-shield",
   "version": "1.0.0",
-  "description": "Mimetic Proxy System OMEGA-240",
-  "main": "server.js",
+  "description": "Static Shield",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "sys-core-gateway",
-  "license": "MIT"
+    "start": "echo 'Deploying static files...'"
+  }
 }
