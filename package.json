@@ -1,11 +1,1 @@
-{
-  "name": "apex-shield-static",
-  "version": "1.0.0",
-  "description": "Static Deployment",
-  "engines": {
-    "node": "18.x"
-  },
-  "scripts": {
-    "start": "echo 'SYSTEM_ONLINE' && exit 0"
-  }
-}
+{}
