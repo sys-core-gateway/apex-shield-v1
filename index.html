@@ -5,306 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APEX ARCHITECT OMEGA</title>
     <style>
+        /* RESET E SFONDO BIANCO ELITE */
         body {
-            background-color: #fdfdfd; /* Bianco seta */
-            color: #1a1a1a; /* Nero profondo */
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #ffffff !important;
+            color: #000000 !important;
+            font-family: 'Helvetica', Arial, sans-serif;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             text-align: center;
+            letter-spacing: 0.1em;
         }
 
-        .elite-portal {
-            width: 85%;
-            max-width: 900px;
+        .container {
+            width: 90%;
+            max-width: 800px;
         }
 
-        .header-group {
-            margin-bottom: 70px;
+        /* IL SIMBOLO OMEGA DALLA TASTIERA */
+        .symbol {
+            font-size: 5rem;
+            font-weight: 100;
+            margin-bottom: 20px;
+            display: block;
         }
 
-        .brand-name {
-            font-size: 2.2rem;
+        .brand-title {
+            font-size: 1.8rem;
             font-weight: 200;
-            letter-spacing: 1.1rem;
+            letter-spacing: 1rem;
             text-transform: uppercase;
-            margin: 0;
+            margin-bottom: 5px;
         }
 
-        .brand-omega {
-            font-size: 0.9rem;
+        .brand-sub {
+            font-size: 1rem;
             font-weight: 700;
-            letter-spacing: 1.8rem;
+            letter-spacing: 1.5rem;
+            margin-bottom: 50px;
             display: block;
-            margin-top: 12px;
-            opacity: 0.8;
-            padding-left: 1.8rem; /* Bilanciamento ottico */
-        }
-
-        .jung-quote {
-            font-family: Georgia, serif;
-            font-style: italic;
-            font-size: 1.3rem;
-            line-height: 1.8;
-            margin: 60px 0;
-            color: #333;
-            letter-spacing: 0.02em;
-        }
-
-        .divider {
-            width: 50px;
-            height: 1px;
-            background: #1a1a1a;
-            margin: 0 auto 50px;
-            opacity: 0.2;
-        }
-
-        .status-footer {
-            font-size: 0.75rem;
-            letter-spacing: 0.4rem;
-            text-transform: uppercase;
-            color: #777;
-        }
-
-        .decreto-line {
-            font-weight: 900;
-            color: #000;
-            margin-bottom: 15px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="elite-portal">
-        <div class="header-group">
-            <h1 class="brand-name">APEX ARCHITECT</h1>
-            <span class="brand-omega">OMEGA</span>
-        </div>
-
-        <div class="jung-quote">
-            "Chi guarda fuori, sogna; chi guarda dentro, si sveglia."
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="status-footer">
-            <div class="decreto-line">DECRETO SECOLARE 2026 — 2032</div>
-            STATUS: ROOT_AUTHORIZED // EROS PEDRAZZANI
-        </div>
-    </div>
-
-</body>
-</html>
-            font-weight: 300;
-            letter-spacing: 0.8rem;
-            text-transform: uppercase;
-            display: block;
-        }
-
-        .omega {
-            font-size: 0.8rem;
-            font-weight: 700;
-            letter-spacing: 1.2rem;
-            margin-top: 10px;
-            display: block;
-            opacity: 0.7;
         }
 
         .quote {
+            font-size: 1.2rem;
             font-style: italic;
-            font-size: 1.1rem;
-            font-weight: 300;
-            line-height: 1.8;
-            margin: 40px 0;
+            line-height: 1.6;
+            margin-bottom: 60px;
             color: #333;
         }
 
         .line {
+            width: 60px;
             height: 1px;
-            background-color: var(--elite-black);
-            width: 50px;
-            margin: 30px auto;
-            opacity: 0.2;
+            background: #000;
+            margin: 0 auto 40px;
         }
 
         .footer {
-            font-size: 0.65rem;
-            text-transform: uppercase;
+            font-size: 0.7rem;
             letter-spacing: 0.3rem;
-            color: #999;
+            text-transform: uppercase;
+            color: #666;
         }
+
+        .bold { font-weight: bold; color: #000; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo-box">
-            <span class="title">APEX ARCHITECT</span>
-            <span class="omega">OMEGA</span>
-        </div>
 
-        <p class="quote">
-            "Chi guarda fuori sogna, chi guarda dentro si sveglia."
-        </p>
+    <div class="container">
+        <div class="symbol">Ω</div>
+
+        <div class="brand-title">APEX ARCHITECT</div>
+        <div class="brand-sub">OMEGA</div>
+
+        <div class="quote">
+            "Chi guarda fuori, sogna; chi guarda dentro, si sveglia."
+        </div>
 
         <div class="line"></div>
 
         <div class="footer">
-            DECRETO SECOLARE 2026 — 2032<br><br>
+            <div class="bold">DECRETO SECOLARE 2026 — 2032</div>
             STATUS: ROOT_AUTHORIZED // EROS PEDRAZZANI
         </div>
     </div>
-</body>
-</html>
-        /* Il Logo: Pulito e Spaziatissimo */
-        .logo-container {
-            margin-bottom: 80px;
-        }
-
-        .logo-text {
-            font-size: 1.8rem;
-            font-weight: 200;
-            letter-spacing: 1.2rem;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .logo-omega {
-            font-size: 0.9rem;
-            font-weight: 600;
-            letter-spacing: 2rem;
-            margin-left: 2rem; /* Allineamento estetico */
-            text-transform: uppercase;
-            opacity: 0.8;
-        }
-
-        /* Citazione Jung: Sottile e profonda */
-        .quote-box {
-            margin-bottom: 60px;
-            padding: 0 40px;
-        }
-
-        .quote-text {
-            font-style: italic;
-            font-size: 1.1rem;
-            font-weight: 300;
-            line-height: 1.8;
-            color: #444;
-        }
-
-        .divider {
-            height: 1px;
-            background-color: var(--elite-black);
-            width: 60px;
-            margin: 0 auto 40px;
-            opacity: 0.3;
-        }
-
-        /* Footer: Autorità ROOT */
-        .system-info {
-            font-size: 0.7rem;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 0.3rem;
-            color: #888;
-        }
-
-        .decreto {
-            font-weight: bold;
-            color: var(--elite-black);
-            margin-bottom: 5px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="main-gateway">
-        <div class="logo-container">
-            <span class="logo-text">APEX ARCHITECT</span>
-            <span class="logo-omega">OMEGA</span>
-        </div>
-
-        <div class="quote-box">
-            <p class="quote-text">
-                "Rendi cosciente l'inconscio, altrimenti sarà l'inconscio a guidare la tua vita e tu lo chiamerai destino."
-            </p>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="system-info">
-            <div class="decreto">DECRETO SECOLARE 2026 — 2032</div>
-            <div>STATUS: ROOT_AUTHORIZED // EROS PEDRAZZANI</div>
-        </div>
-    </div>
 
 </body>
 </html>
-        /* Il Logo: Pulito e Spaziatissimo */
-        .logo-container {
-            margin-bottom: 80px;
-        }
-
-        .logo-text {
-            font-size: 1.8rem;
-            font-weight: 200;
-            letter-spacing: 1.2rem;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .logo-omega {
-            font-size: 0.9rem;
-            font-weight: 600;
-            letter-spacing: 2rem;
-            margin-left: 2rem; /* Allineamento estetico */
-            text-transform: uppercase;
-            opacity: 0.8;
-        }
-
-        /* Citazione Jung: Sottile e profonda */
-        .quote-box {
-            margin-bottom: 60px;
-            padding: 0 40px;
-        }
-
-        .quote-text {
-            font-style: italic;
-            font-size: 1.1rem;
-            font-weight: 300;
-            line-height: 1.8;
-            color: #444;
-        }
-
-        .divider {
-            height: 1px;
-            background-color: var(--elite-black);
-            width: 60px;
-            margin: 0 auto 40px;
-            opacity: 0.3;
-        }
-
-        /* Footer: Autorità ROOT */
-        .system-info {
-            font-size: 0.7rem;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 0.3rem;
-            color: #888;
-        }
-
-        .decreto {
-            font-weight: bold;
-            color: var(--elite-black);
-            margin-bottom: 5px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="main-gateway">
-        <div class="logo-container
