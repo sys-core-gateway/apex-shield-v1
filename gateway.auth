@@ -1,1 +1,13 @@
-{"access": {"pro": "full", "user": "limited"}}
+/* APEX_OMEGA_GATEWAY_AUTHORITY_v20.01.5 */
+/* ALPHA_ROOT: EROS_PEDRAZZANI */
+
+const AUTH_GATE = {
+    target: "EROS_PEDRAZZANI",
+    security_level: "OMEGA_BLACK",
+    
+    validate: function(user) {
+        return user === this.target ? "ACCESS_GRANTED" : "GHOST_MODE_ACTIVE";
+    }
+};
+
+console.log("GATEWAY_AUTH: Online. Target: " + AUTH_GATE.target);
