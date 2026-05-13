@@ -1,11 +1,13 @@
 {
-  "name": "apex-omega-shield",
-  "version": "1.0.0",
+  "name": "sys-core-gateway",
+  "version": "20.01.5",
+  "description": "APEX OMEGA CORE GATEWAY",
   "main": "server.js",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
   "scripts": {
     "start": "node server.js"
+  },
+  "author": "Eros Pedrazzani",
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
