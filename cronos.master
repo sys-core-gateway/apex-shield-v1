@@ -1,1 +1,15 @@
-const now = () => new Date().toISOString();
+/* APEX_OMEGA_CRONOS_MASTER_v20.01.5 */
+/* TIMELINE_ANCHOR: 14_MAY_2026_01_30 */
+
+const CRONOS_LIMIT = {
+    baseline: "v20.01.5",
+    purge_legacy: true,
+    alpha_clock: () => new Date().toISOString()
+};
+
+function lockTimeline() {
+    console.log("Cronos Master: Timeline Locked at " + CRONOS_LIMIT.baseline);
+    console.log("Legacy v2.31: Disconnected.");
+}
+
+lockTimeline();
