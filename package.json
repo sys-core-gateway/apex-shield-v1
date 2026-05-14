@@ -1,15 +1,4 @@
-{
-  "name": "apex-shield-v1",
-  "version": "20.01.5",
-  "description": "Kernel Core Gateway",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  }
+"scripts": {
+  "start": "export PROJECT_MODE=WHITE_LABEL && export AUTH_LEVEL=GUEST && node server.js",
+  "build": "npm install"
 }
