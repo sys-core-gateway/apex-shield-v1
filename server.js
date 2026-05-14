@@ -1,4 +1,21 @@
+// OMEGA_LOCK: AUTH_REQUIRED | STATUS: OVERWRITE_ACTIVE | NO_LEGACY_FILES_ALLOWED
+const express = require('express');// OMEGA_LOCK: AUTH_REQUIRED | STATUS: OVERWRITE_ACTIVE | NO_LEGACY_FILES_ALLOWED
 const express = require('express');
+const path = require('path');
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.use(express.static(path.join(__currentDir, 'public')));
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__currentDir, 'public', 'index.html'));
+});
+
+app.listen(PORT, () => {
+    console.log(`[OK] KERNEL v20.01.5 - PORTA: ${PORT}`);
+    console.log(`[OK] OMEGA_LOCK ATTIVA: NESSUNA RISORSA LEGACY CARICATA`);
+});
+
 const path = require('path');
 const fs = require('fs');
 const app = express();
